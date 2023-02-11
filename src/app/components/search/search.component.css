@@ -1,0 +1,37 @@
+/*
+	===========================
+	Section:: Page Form
+	===========================
+*/
+.pageForm {
+    margin-bottom: 32px;
+}
+
+.pageForm form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pageForm form input[type='search'] {
+    background: url('../../../assets/images/search_ico.svg');
+    background-repeat: no-repeat;
+    background-position: 16px 11px;
+    padding-left: 48px;
+}
+
+.pageForm form .col {
+    display: flex;
+    column-gap: 40px;
+}
+
+.pageForm form .ico {
+    line-height: 42px;
+}
+
+.pageForm form .ico i {
+    margin-right: 5px;
+}
+
+.pageForm form .ico i img {
+    vertical-align: middle;
+}

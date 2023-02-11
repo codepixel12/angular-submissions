@@ -1,0 +1,113 @@
+/*
+	===========================
+	Section:: Page Form
+	===========================
+*/
+.submissionsMap {
+    display: flex;
+    column-gap: 40px;
+    margin: 0px -2.5%;
+}
+
+/* ==== Location List === */
+.submissionsMap .locationLists {
+    width: 460px;
+    margin-left: 2.5%;
+}
+
+.submissionsMap .locationLists ul li {
+    border: 1px solid #B8B9BC;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 17px 16px;
+}
+
+.submissionsMap .locationLists ul li .status {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #C8E7FF;
+    border: 1px solid #2188D9;
+    border-radius: 4px;
+    padding: 5px 16px;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+}
+
+.submissionsMap .locationLists ul li .status:before {
+    content: " ";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-bottom: -1px;
+    background-color: #2188D9;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.submissionsMap .locationLists ul li .status.uncomplete {
+    background-color: rgba(255, 61, 0, 0.1);
+    border-color: #FF3D00;
+    color: #FF3D00;
+}
+
+.submissionsMap .locationLists ul li .status.uncomplete:before {
+    background-color: #FF3D00;
+}
+
+.submissionsMap .locationLists ul li .status.lowRisk {
+    background-color: #D7E5DA;
+    border-color: #53D86A;
+    color: #53D86A;
+}
+
+.submissionsMap .locationLists ul li .status.lowRisk:before {
+    background-color: #53D86A;
+}
+
+.submissionsMap .locationLists ul li .status.needsReview {
+    background-color: #ECECED;
+    border-color: #B8B9BC;
+    color: #B8B9BC;
+}
+
+.submissionsMap .locationLists ul li .status.needsReview:before {
+    background-color: #B8B9BC;
+}
+
+.submissionsMap .locationLists ul li h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    padding-right: 145px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.submissionsMap .locationLists ul li label {
+    display: block;
+    font-weight: 500;
+    color: #B8B9BC;
+    margin-bottom: 8px;
+}
+
+.submissionsMap .locationLists ul li label:last-child {
+    margin-bottom: 0px;
+}
+
+.submissionsMap .locationLists ul li label span {
+    color: initial;
+    font-weight: 400;
+}
+
+.submissionsMap .locationLists ul li label strong {
+    color: #FF3D00;
+}
+
+/* ==== Location Map === */
+.locationMap {
+    width: calc(100% - 500px);
+    /* 500px = 460px is locationLists width + 40 column gap width */
+    background-color: #f6f6f4;
+}

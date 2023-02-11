@@ -1,0 +1,62 @@
+<!-- 
+    ======
+    Type == Submissions Map
+    ======
+-->
+<section class="submissionsMap" id="map">
+
+    <!-- ====== Location Lists -->
+    <div class="locationLists">
+        <ul>
+
+            <li>
+                <span class="status uncomplete">Uncomplete</span>
+                <h3>Work Flow: Requires Location</h3>
+                <label>Form: <span>denisgordiyenya@gmail.com</span></label>
+                <label>To: <span>denisgordiyenya@gmail.com</span></label>
+                <label>Due Date: <strong>06 December</strong></label>
+            </li>
+
+            <li>
+                <span class="status lowRisk">Low Risk</span>
+                <h3>Work Flow: Requires Location</h3>
+                <label>Form: <span>denisgordiyenya@gmail.com</span></label>
+                <label>To: <span>denisgordiyenya@gmail.com</span></label>
+                <label>Due Date: <strong>06 December</strong></label>
+            </li>
+
+            <li>
+                <span class="status uncomplete">Uncomplete</span>
+                <h3>Work Flow: Requires Location </h3>
+                <label>Form: <span>denisgordiyenya@gmail.com</span></label>
+                <label>To: <span>denisgordiyenya@gmail.com</span></label>
+                <label>Due Date: <strong>06 December</strong></label>
+            </li>
+
+            <li>
+                <span class="status needsReview">Needs Review</span>
+                <h3>Work Flow: Requires Location</h3>
+                <label>Form: <span>denisgordiyenya@gmail.com</span></label>
+                <label>To: <span>denisgordiyenya@gmail.com</span></label>
+                <label>Due Date: <strong>06 December</strong></label>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- ====== Location Map -->
+    <div class="locationMap">
+
+        <div class="my-google-map">
+            <google-map [options]="mapOptions" height="80vh" width="100%">
+
+                <!--<map-marker [position]="marker.position"></map-marker>-->
+                <map-marker *ngFor="let marker of markers" [position]="marker.position"
+                    [options]="{icon: 'assets/images/marker.png'}"></map-marker>
+
+            </google-map>
+        </div>
+
+    </div>
+
+</section>

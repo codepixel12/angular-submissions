@@ -1,0 +1,53 @@
+<!-- 
+    ======
+    Search Form
+    ======
+-->
+<div class="pageForm">
+    <form>
+
+        <!-- === Form Section 1 -->
+        <div class="col">
+            <input type="search" placeholder="Search" />
+
+            <select ng-model="formSelect">
+                <option>Select Form</option>
+                <option>Product Delivery Form Test</option>
+                <option>Bill of Landing Page</option>
+                <option>Geotab odometer Test</option>
+                <option>Billing Regular Form</option>
+                <option>Test Form Submissions</option>
+            </select>
+
+            <select ng-model="statusSelect">
+                <option>Select Status</option>
+                <option>Low Risk</option>
+                <option>Uncomplete</option>
+                <option>Unassigned</option>
+                <option>Needs Review</option>
+            </select>
+
+            <input type="date" placeholder="Select Date" class="last" />
+        </div>
+
+        <!-- === Form Section 2 -->
+        <div class="col">
+
+            <div class="segment" style="width:155px">
+                <label>
+                    <input type="radio" name="type" value="map" [checked]="true" (change)="radioChangeHandler($event)">
+                    <span class="selection">Map</span>
+                </label>
+                <label>
+                    <input type="radio" name="type" value="list" (change)="radioChangeHandler($event)">
+                    <span class="selection">List</span>
+                </label>
+            </div>
+            <a href="#" class="ico">
+                <i><img src="assets/images/export_ico.svg" alt="" /></i>
+                Export
+            </a>
+
+        </div>
+    </form> <!-- form ends -->
+</div>

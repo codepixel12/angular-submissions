@@ -1,0 +1,71 @@
+/*
+	===========================
+	Application Header
+	===========================
+*/
+header {
+    background-color: #2188D9;
+    height: 72px;
+    color: #fff;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+header a {
+    color: #fff;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header a {
+    line-height: 72px;
+}
+
+header .logo a {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 72px;
+}
+
+header .logo a:hover {
+    background-color: inherit !important;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 24px;
+}
+
+header a:hover,
+header a.active {
+    background-color: #1773BB;
+}
+
+header nav ul li a i {
+    margin-right: 11px;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+header .notification {
+    padding: 0px 10px;
+}
+
+header .logout {
+    padding: 0px 10px;
+}

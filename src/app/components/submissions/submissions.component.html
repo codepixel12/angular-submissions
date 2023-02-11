@@ -1,0 +1,12 @@
+<section class="pageBody">
+    <section class="container">
+        <h1 class="pageTitle">Submissions</h1>
+
+        <app-search (isSelectedTypeForParent)="responseForToggleType($event)"></app-search>
+
+        <div *ngIf="isSelectType"> <app-submissions-map></app-submissions-map></div>
+
+        <div *ngIf="!isSelectType"> <app-submissions-lists></app-submissions-lists></div>
+
+    </section> <!--.container ends -->
+</section> <!--.pageBody ends -->
